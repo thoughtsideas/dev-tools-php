@@ -1,0 +1,45 @@
+{
+    "name": "thoughtsideas/dev-tools-php",
+    "description": "A collection of development tools use in PHP projects.",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thoughts & Ideas",
+            "email": "hello@thoughtsandideas.uk",
+            "homepage": "https://thoughtsandideas.uk/",
+            "role": "Agency"
+        },
+        {
+            "name": "Michael Bragg",
+            "email": "email@michaelbragg.com",
+            "homepage": "https://www.michaelbragg.com/",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "audit": {
+          "abandoned": "report"
+        },
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "prefer-stable": true
+    },
+    "require-dev": {
+        "captainhook/captainhook": "^5.19",
+        "roave/security-advisories": "dev-latest"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "vendor/bin/captainhook install -f -s"
+        ],
+        "test:lint": "composer validate --ansi --strict",
+        "test:security": "composer audit --ansi"
+    },
+    "scripts-descriptions": {
+        "test:lint": "Lint file syntax.",
+        "test:security": "Check for security issues."
+    }
+}
