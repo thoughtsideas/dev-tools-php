@@ -25,10 +25,14 @@
         "sort-packages": true,
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "prefer-stable": true
+        "prefer-stable": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "require-dev": {
         "captainhook/captainhook": "^5.19",
+        "phly/keep-a-changelog": "^2.12",
         "roave/security-advisories": "dev-latest"
     },
     "scripts": {
