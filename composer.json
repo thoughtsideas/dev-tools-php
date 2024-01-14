@@ -27,7 +27,8 @@
         "preferred-install": "dist",
         "prefer-stable": true,
         "allow-plugins": {
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
     "require-dev": {
@@ -47,6 +48,7 @@
         "test:security": "Check for security issues."
     },
     "require": {
-        "php-parallel-lint/php-parallel-lint": "^1.3"
+        "php-parallel-lint/php-parallel-lint": "^1.3",
+        "phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
     }
 }
