@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- PHP CodeSniffer v3.8
+
 - PHPUnit v10.5
 
 - PHPStan v1.10
