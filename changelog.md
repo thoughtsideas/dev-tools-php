@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- PHPStan v1.10
+
 - PHP Compatibility package
 
 - PHP Parallel Lint package
