@@ -45,5 +45,8 @@
     "scripts-descriptions": {
         "test:lint": "Lint file syntax.",
         "test:security": "Check for security issues."
+    },
+    "require": {
+        "php-parallel-lint/php-parallel-lint": "^1.3"
     }
 }

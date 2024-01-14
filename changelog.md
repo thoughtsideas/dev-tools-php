@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- PHP Parallel Lint package
+
 - Keep a Changelog package
 
 ### Changed
