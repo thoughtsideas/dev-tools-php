@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- PHPUnit Polyfills v2.0
+
 - PHPStan Extension Installer v1.3
 
 - PHP CodeSniffer Composer Installer v1.0
