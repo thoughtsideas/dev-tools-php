@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- PHP CodeSniffer Composer Installer v1.0
+
 - PHP CodeSniffer v3.8
 
 - PHPUnit v10.5
