@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- Rector v0.19.0
+
 - PHPUnit Polyfills v2.0
 
 - PHPStan Extension Installer v1.3
