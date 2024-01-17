@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- Coordinated Disclosure Security instructions
+
 - Slevomat Coding Standard v8.14
 
 - Rector v0.19.0
