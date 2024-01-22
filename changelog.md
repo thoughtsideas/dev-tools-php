@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- Test update workflows
+
 - Extended readme documentation
 
 - Coordinated Disclosure Security instructions

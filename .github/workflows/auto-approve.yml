@@ -1,0 +1,47 @@
+---
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+#
+# Version 1.0.0
+# Author: Thoughts & Ideas <hello@thoughtsandideas.uk>
+
+name: 'Auto Approve'
+
+on:
+  workflow_run:
+    workflows:
+      - 'Commit'
+    types:
+      - completed
+    branches:
+      - 'dependabot/**'
+
+concurrency:
+  group: ${{ github.workflow }}--${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+
+  metadata:
+    name: 'Get Metadata'
+    runs-on: 'ubuntu-latest'
+    permissions:
+      pull-requests: read
+
+    if: >
+      github.actor == 'dependabot[bot]' &&
+      github.event.workflow_run.conclusion == 'success'
+
+    steps:
+
+      - name: 'Pull Request Metadata'
+        id: 'metadata'
+        uses: 'dependabot/fetch-metadata@v1.6.0'
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: 'Approve Pull Request'
+        if: >
+          steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr review "$PR_URL" --approve
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
