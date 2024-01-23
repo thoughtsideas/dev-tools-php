@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- License Checker
+
 - Test update workflows
 
 - Extended readme documentation

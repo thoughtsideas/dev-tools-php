@@ -34,6 +34,7 @@
     },
     "require-dev": {
         "captainhook/captainhook": "^5.20",
+        "madewithlove/license-checker": "^1.5",
         "phly/keep-a-changelog": "^2.12",
         "roave/security-advisories": "dev-latest"
     },
@@ -41,10 +42,12 @@
         "post-autoload-dump": [
             "vendor/bin/captainhook install -f -s"
         ],
+        "test:license": "vendor/bin/license-checker check",
         "test:lint": "composer validate --ansi --strict",
         "test:security": "composer audit --ansi"
     },
     "scripts-descriptions": {
+        "test:license": "Check licenses are compatible.",
         "test:lint": "Lint file syntax.",
         "test:security": "Check for security issues."
     },
