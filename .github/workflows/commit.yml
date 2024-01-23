@@ -20,7 +20,7 @@ jobs:
 
   # License Test
   license:
-    name: 'PHP Security Analysis'
+    name: 'License Test'
     runs-on: 'ubuntu-latest'
 
     strategy:
