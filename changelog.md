@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- Composer Normalize v2.41
+
 - License Checker
 
 - Test update workflows

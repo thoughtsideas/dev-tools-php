@@ -17,6 +17,15 @@
                 "action": "composer run test:lint"
             },
             {
+                "action": "composer normalize --ansi --dry-run",
+                "conditions": [
+                    {
+                        "exec": "\\CaptainHook\\App\\Hook\\Condition\\FileStaged\\Any",
+                        "args": [["composer.json"]]
+                    }
+                ]
+            },
+            {
                 "action": "composer run test:security"
             }
       ]
