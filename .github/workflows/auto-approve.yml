@@ -7,13 +7,12 @@
 name: 'Auto Approve'
 
 on:
-  workflow_run:
-    workflows:
-      - 'Commit'
-    types:
-      - completed
-    branches:
-      - 'dependabot/**'
+  # workflow_run:
+  #   workflows:
+  #     - 'Commit'
+  #   types:
+  #     - completed
+  pull_request:
 
 concurrency:
   group: ${{ github.workflow }}--${{ github.head_ref || github.ref_name }}
