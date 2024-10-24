@@ -48,9 +48,7 @@
         }
     },
     "scripts": {
-        "post-autoload-dump": [
-            "vendor/bin/captainhook install -f -s"
-        ],
+        "post-autoload-dump": [],
         "test:license": "vendor/bin/license-checker check",
         "test:lint": "composer validate --ansi --strict",
         "test:security": "composer audit --ansi"
