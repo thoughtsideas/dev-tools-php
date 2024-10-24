@@ -113,6 +113,6 @@ jobs:
           php --version
           composer --version
 
-      - name: 'Validate Composer file.'
+      - name: 'Install dependencies'
         run: |
           composer update --prefer-${{ matrix.composer-deps }}
