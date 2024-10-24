@@ -115,4 +115,4 @@ jobs:
 
       - name: 'Validate Composer file.'
         run: |
-          composer install --prefer-${{ matrix.composer-deps }}
+          composer update --prefer-${{ matrix.composer-deps }}
